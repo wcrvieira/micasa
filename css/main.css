@@ -1,3 +1,21 @@
 * {
-    
+    font-family: 'Roboto', sans-serif;
+}
+
+.bg-stilo-nav {
+    background: rgb(182, 228, 156);
+}
+
+#navbar-items .navbar-nav {
+    display: flex;   
+    justify-content: center; 
+    width: 100%;
+}
+
+.navbar-brand {
+    max-width: 5em;
+}
+
+img {
+    width: 50%;
 }

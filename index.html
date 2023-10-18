@@ -19,10 +19,13 @@
 
     <!-- Bootstrap Icons-->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
+
+    <!-- CSS do projeto -->
+    <link rel="stylesheet" href="css/main.css">
 </head>
 
 <header>
-    <nav class="navbar navbar-expand-lg fixed-top bg-color-header">
+    <nav class="navbar navbar-expand-lg fixed-top bg-stilo-nav">
         <section class="container py-3">
             <a href="#" class="navbar-brand">
                 <img class="img-fluid" src="images/home.png" alt="Logo" >
@@ -54,9 +57,76 @@
 </header>
 
 <body>
+    <!-- Slider -->
+    <section class="container" id="slider-container">
+        <section class="carousel slide" id="slider" data-bs-interval="300" data-bs-ride="carousel">
+            <section class="carousel-indicators">
 
+                <button 
+                    type="button" 
+                    class="active"
+                    data-bs-target="#slider"
+                    data-bs-slide-to="0"
+                    aria-current="true"
+                    aria-label="Slide 1"                    
+                ></button>
 
+                <button 
+                    type="button"                     
+                    data-bs-target="#slider"
+                    data-bs-slide-to="1"                    
+                    aria-label="Slide 2"                    
+                ></button>
 
+                <button 
+                type="button"                     
+                data-bs-target="#slider"
+                data-bs-slide-to="2"                    
+                aria-label="Slide 3"                    
+            ></button>
+
+            <button 
+                type="button"                     
+                data-bs-target="#slider"
+                data-bs-slide-to="3"                    
+                aria-label="Slide 4"                    
+            ></button>
+        </section>
+
+        <section class="carousel-inner">
+            <section class="carousel-item active">
+                <img src="images/hallo1.jpg" alt="Imagem 1" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 1</h5>
+                    <a href="#" class="btn btn-dark">Veja mais</a>
+                </section>
+            </section>
+
+            <section class="carousel-item">
+                <img src="images/hallo2.jpg" alt="" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 2</h5>
+                    <a href="#" class="btn btn-dark">Veja +</a>
+                </section>
+            </section>
+
+            <section class="carousel-item">
+                <img src="images/hallo4.jpg" alt="" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 3</h5>
+                    <a href="#" class="btn btn-dark">Veja mesmo</a>
+                </section>
+            </section>
+
+            <section class="carousel-item">
+                <img src="images/hallo3.jpg" alt="" class="d-block w-100">
+                <section class="carousel-caption">
+                    <h5>Imagem 4</h5>
+                    <a href="#" class="btn btn-dark">Veja logo</a>
+                </section>
+            </section>
+        </section>      
+    </section>
 
     <!-- Bootstrap JS-->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
